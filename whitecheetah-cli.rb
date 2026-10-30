@@ -5,21 +5,21 @@
 class WhitecheetahCli < Formula
   desc "A fast, minimal CLI tool"
   homepage "https://github.com/byteartesan-labs/whitecheetah-cli-releases"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.7.0/whitecheetah-cli_0.7.0_darwin_amd64.tar.gz"
-      sha256 "a1632bf86e0d4fefb2ffa64094d20d913a5769873ee05bef54501f1488eb652f"
+      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.8.0/whitecheetah-cli_0.8.0_darwin_amd64.tar.gz"
+      sha256 "0b3b997680384a2f4393137ea0e0a80d250a911137889bd2c197edb5616f97d5"
 
       define_method(:install) do
         bin.install "whitecheetah-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.7.0/whitecheetah-cli_0.7.0_darwin_arm64.tar.gz"
-      sha256 "35f686a3d535240035c0cacf0dff64b879aad8415013807d813c853db6cf4ab0"
+      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.8.0/whitecheetah-cli_0.8.0_darwin_arm64.tar.gz"
+      sha256 "5f58e5a02ab49fe58eeea0f0a240cda5c8f7f05cde0e4d96586e8344d84720f6"
 
       define_method(:install) do
         bin.install "whitecheetah-cli"
@@ -29,15 +29,15 @@ class WhitecheetahCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.7.0/whitecheetah-cli_0.7.0_linux_amd64.tar.gz"
-      sha256 "d6524e902e0cca356ab9b86a503db3199bea3776c8d04a7f5e2d9850eab8d6cf"
+      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.8.0/whitecheetah-cli_0.8.0_linux_amd64.tar.gz"
+      sha256 "4453532c1ef8fbf5146b052b4023572bd7490a95804ef042347a71ef5f72187f"
       define_method(:install) do
         bin.install "whitecheetah-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.7.0/whitecheetah-cli_0.7.0_linux_arm64.tar.gz"
-      sha256 "acdb4480a2457aa6dc700db976311a14174c9fc6adc05e6c1c878e881d6417da"
+      url "https://github.com/byteartesan-labs/whitecheetah-cli-releases/releases/download/v0.8.0/whitecheetah-cli_0.8.0_linux_arm64.tar.gz"
+      sha256 "0bcfec50a15c4b79251000a77bdc8aae4e49fa94c1d2f7fd69c5919b80d6a4eb"
       define_method(:install) do
         bin.install "whitecheetah-cli"
       end
